@@ -1,0 +1,11 @@
+// Mixins
+@mixin ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+@mixin link{
+    text-decoration: none;
+    color: white;
+}
