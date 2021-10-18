@@ -44,7 +44,6 @@ header h1 {
 
 main {
   position: absolute;
-  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,16 +51,16 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 30px;
-  height: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 830px;
   width: 100%;
   border: 1px solid red;
 }
 
 #taskbar {
-  width: 15%;
+  width: 20%;
   border: 1px solid red;
 }
 
@@ -72,6 +71,10 @@ main {
   height: 100%;
 }
 
+#taskbar li {
+  padding: 15px;
+}
+
 #taskbar a {
   text-decoration: none;
   color: white;
@@ -79,14 +82,41 @@ main {
 }
 
 #task-container {
-  width: 75%;
+  position: absolute;
+  top: 100px;
+  right: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: 600px;
   border: 1px solid red;
+}
+
+#task-container h2 {
+  text-align: center;
+}
+
+#task-container li {
+  text-align: center;
 }
 
 #task-container ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  height: 500px;
+}
+
+#task-list {
+  width: 70%;
 }
 
 footer {

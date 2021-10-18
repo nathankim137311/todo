@@ -16,22 +16,23 @@ header {
 
 main {
     position: absolute;
-    top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 30px;
-    height: 80%;
+    justify-content: space-between;
+    height: 830px;
     width: 100%;
     border: 1px solid red;
 }
 
 #taskbar {
-    width: 15%;
+    width: 20%;
     border: 1px solid red;
     ul {
         @include ul; 
         height: 100%;
+    }
+    li {
+        padding: 15px
     }
     a {
         @include link;
@@ -40,11 +41,29 @@ main {
 }
 
 #task-container {
-    width: 75%;
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 600px;
     border: 1px solid red;
+    h2 {
+        text-align: center;
+    }
+    li {
+        text-align: center;
+    }
     ul {
         @include ul; 
+        height: 500px;
     }
+}
+
+#task-list {
+    width: 70%;
 }
 
 footer {
