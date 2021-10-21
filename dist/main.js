@@ -1,1 +1,1 @@
-console.log("hello everybody");
+console.log("hello everybody"),document.getElementById("task-btn").addEventListener("click",(e=>{e.preventDefault(),document.getElementById("myForm").style.display="block"})),closeBtn.addEventListener("click",(e=>{e.preventDefault(),document.getElementById("myForm").style.display="none"}));

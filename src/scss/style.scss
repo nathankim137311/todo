@@ -1,6 +1,7 @@
 @import "globals"; 
 @import "variables"; 
 @import "mixins"; 
+@import "form"; 
 
 header {
     display: flex;
@@ -25,12 +26,13 @@ main {
 }
 
 #taskbar {
-    width: 20%;
+    width: 15%;
     border: 1px solid red;
-    ul {
-        @include ul; 
-        height: 100%;
-    }
+}
+
+#projects-list {
+    @include ul; 
+    height: 100%;
     li {
         padding: 15px
     }

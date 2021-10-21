@@ -13,17 +13,41 @@
         <h1>// Todo-list App</h1>
     </header>
     <main>
+
         <div id="taskbar">
-            <ul>
+            <ul id="projects-list">
+                <li><button id="task-btn">Click to Add Task</button></li>
                 <li><a href="#">Today</a></li>
             </ul>
         </div>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+            <h2>Task</h2>
+            <label for="title">title:</label>
+            <input type="text" placeholder="Title: Homework" name="title" id="title-input">
+            <label for="detail">details:</label>
+            <textarea name="detail" id="detail-input" cols="30" rows="6" placeholder="do homework before 9pm..."></textarea>
+            <label for="project">project:</label>
+            <input type="text" placeholder="enter project name" name="project" id="project-input">
+            <select name="priority-level" id="priority-input">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <div id="button-container">
+                <button id="close-btn">close</button>
+                <button id="add-btn">add</button>
+            </div>
+            </form>
+        </div>
+
         <div id="task-container">
-            <h2>Tasks</h2>
+            <h2 id="project-header">Tasks</h2>
             <ul id="task-list">
-                <li><span>blah blah blah</span></li>
             </ul>
         </div>
+
     </main>
     <footer>
         <span>Check out this projects code --></span>

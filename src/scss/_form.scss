@@ -1,0 +1,29 @@
+@import "globals"; 
+@import "variables"; 
+@import "mixins"; 
+// pop-up form
+.form-popup {
+    display: none;
+    position: absolute;
+    left: 277px;
+    z-index: 1000;
+    background-color: white;
+    color: $darkgrey;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px red solid;
+}
+
+.form-container > * {
+    margin-bottom: 20px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
