@@ -1,5 +1,8 @@
 console.log('hello everybody');
+import Task from './task.js';
 const taskBtn = document.getElementById('task-btn');
+const closeBtn = document.getElementById('close-btn');
+const addBtn = document.getElementById('add-btn'); 
 
 //  opens pop-up form
 taskBtn.addEventListener('click', (e) => {
